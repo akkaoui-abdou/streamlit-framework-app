@@ -1,5 +1,5 @@
 Markup :  ### Docker Tutorial For Beginners  ###
-Markup :  #### How To Containerize Sample App  Applications####
+Markup :  #### How To Containerize Sample App  Applications ####
 Markup :  ##### Streamlit framewor Python #####
 ===
 
