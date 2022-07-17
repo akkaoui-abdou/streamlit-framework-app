@@ -1,7 +1,7 @@
 ### Docker Tutorial For Beginners  ###
 #### How To Containerize Sample App  Applications ####
 ##### Streamlit Framework Python #####
-===
+=============
 
 
 Consider the scenario where you would like to build a growth calculator that determines the worth of an investment given the growth rate, initial investment, and time in years.
@@ -57,7 +57,7 @@ The dockerfile required for this project mainly has to achieve the following log
 ```yaml
 FROM python:3.8
 
-ENV MICRO_SERVICE=/home/app/webapp
+ENV MICRO_SERVICE=/usr/src/app/
 # set work directory
 RUN mkdir -p $MICRO_SERVICE
 # where your code lives
@@ -70,10 +70,33 @@ ENV PYTHONUNBUFFERED 1
 # install dependencies
 RUN pip install --upgrade pip
 # copy project
-COPY src/ $MICRO_SERVICE
+#COPY src/ $MICRO_SERVICE
+COPY . $MICRO_SERVICE
+
 RUN pip install -r requirements.txt
+
 EXPOSE 8501
-CMD streamlit run app.py
+
+#CMD streamlit run app.py
+
+```
+
+Create docker-compose.yml file directory source
+=============
+
+```yaml
+
+version: "3"
+services:
+  streamlit:
+    build: .
+    command: "streamlit run src/app.py"
+    ports:
+      - "8501:8501"
+    volumes:
+      - "./src:/usr/src/app/src"
+
+
 ```
 
 
