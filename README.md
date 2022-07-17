@@ -81,7 +81,7 @@ EXPOSE 8501
 
 ```
 
-Create docker-compose.yml file directory source
+Create docker-compose.yml file in directory source
 =============
 
 ```yaml
