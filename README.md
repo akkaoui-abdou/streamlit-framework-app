@@ -89,6 +89,6 @@ You can now view your Streamlit app in your browser.
 
 Network URL: http://172.21.0.2:8501
 
-![alt text](https://github.com/akkaoui-abdou/streamlit-framework-app/tree/main/src/image/streamlit.png)
+![alt text](https://github.com/akkaoui-abdou/streamlit-framework-app/blob/main/image/streamlit.png)
 
 
