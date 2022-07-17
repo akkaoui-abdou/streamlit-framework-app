@@ -1,6 +1,6 @@
 ### Docker Tutorial For Beginners  ###
 #### How To Containerize Sample App  Applications ####
-##### Streamlit framewor Python #####
+##### Streamlit Framework Python #####
 ===
 
 
