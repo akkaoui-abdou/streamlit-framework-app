@@ -85,6 +85,10 @@ $ docker-compose up --build
 
 The app is now running at the localhost address provided by the Docker interface.
 
-![alt text](http://url/to/img.png)
+You can now view your Streamlit app in your browser.
+
+Network URL: http://172.21.0.2:8501
+
+![alt text](https://github.com/akkaoui-abdou/streamlit-framework-app/tree/main/src/image/streamlit.png)
 
 
